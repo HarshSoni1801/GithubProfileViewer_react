@@ -57,7 +57,7 @@ function Body()
                      <h2>{value.login}</h2>
                      <h3>No. of public Repos: {value.public_repo}</h3>
                      <h3>Last Active at: {formatDate(value.updated_at)}</h3>
-                     <a href={value.html_url} target="blank">Go to Github Profile</a>
+                     <a href={value.html_url} target="_blank">Go to Github Profile</a>
                   </div>
                   )
                })
