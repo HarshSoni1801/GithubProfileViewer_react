@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch Github User</title>
+    <style>
+      body{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        height: 100vh;
+        width: 100vw;
+        background-color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      h1{
+        margin: 0;
+        font-size: 4rem;
+      }
+      #root{
+        height: 100%;
+        width: 100%;
+      }
+      .heading{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: lightgreen;
+        height: 10%;
+        padding-bottom: 90px;
+      }
+      h2{
+        font-size: 2.4rem;
+      }
+      a{
+        font-size: 1.3rem;
+        text-decoration: none;
+        color: inherit;
+      }
+      a:hover{
+        font-weight: bolder;
+      }
+      .Profiles{
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        }
+        .Form{
+          margin-top: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 50px;
+        }
+        .SearchBar{
+          background-color: rgb(64, 64, 64);
+          width: 10%;
+          height: 10px;
+          padding: 10px;
+          border-radius: 20px;
+          color: white;
+        }
+        button{
+          background-color: rgb(64, 64, 64);
+          padding: 10px;
+          padding-left: 15px;
+          padding-right: 15px;
+          border-radius: 5px;
+          color: white;        
+        }
+        button:hover{
+          background-color: rgb(207, 255, 207);
+          color: black;
+          cursor: pointer;
+        }
+        .SearchBar::placeholder{
+          color: white;
+          font-style: italic;
+        }
+      .Card{
+        text-align: center;
+        margin: 20px;
+        background-color: rgb(207, 255, 207);
+        padding: 30px;
+        border: 5px solid grey;
+        border-radius: 20px;
+      }
+      .Card:hover{
+        border: 5px solid green;
+      }
+      img{
+        border: 3px solid black;
+        height: 200px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./src/main.jsx"></script>
+  </body>
+</html>
